@@ -53,14 +53,17 @@ The "Notebooks" folder contains the following Jupyter notebooks:
 
 We suggest to use the provided conda environment to run the notebooks, this can be done selecting the "cdk46i-metastatic-bc-ml" enviroment from your IDE. We recommend using Visual Studio Code or PyCharm.
 
-#### Input preparation
+## Input preparation
 
-The data should have columns names: 
+The data should have the following columns names and levels: 
+- "Age": numeric
+- "
 
-xxx should be coded as. All other variables should be numeric. 
-Please refer to the example provided.
+Binary variables should be coded as 1/0. All other variables should be numeric. 
+The pipeline for evaluation includes a step for imputing missing data from the training dataset (to avoid information leakage). Any other methods can be used for indipendent data, as long as the imputed set is passed in the correct format. 
+Please refer to the "Datasets" folder for any doubts.
 
-#### Notebook overview
+## Notebook overview
 This part should serve as an overview of the basic steps of the inference pipeline. Please refer to the notebook "Inference.ipynb" to perform the analysis.
 
 **a.** Import the required packages for inference and visualization 
