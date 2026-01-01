@@ -41,22 +41,22 @@ conda activate cdk46i-metastatic-bc-ml
 ```
 
 ### 3. Prepare your data
-The "Datasets" folder contains the following files:
-- "validation_dataset.xlsx": Excel file containing the data to replicate the validation step of the original manuscript. This SHOULD NOT be modified.
-- "Inference_dataset.xlsx": An Excel template containing 5 patients to be used for reference. Please prepare your dataset (or modify this file) according to this template. See "Input preparation" sections for further details.
-- "Inference_with_predictions.xlsx": An example on how the file should look after running the inference notebook.  
+The **"Datasets"** folder contains the following files:
+- **"validation_dataset.xlsx"**: Excel file containing the data to replicate the validation step of the original manuscript. This SHOULD NOT be modified.
+- **"Inference_dataset.xlsx"**: An Excel template containing 5 patients to be used for reference. Please prepare your dataset (or modify this file) according to this template. See "Input preparation" sections for further details.
+- **"Inference_with_predictions.xlsx"**: An example on how the file should look after running the inference notebook.  
 
 ### 4. Run the notebooks
-The "Notebooks" folder contains the following Jupyter notebooks:
-- "Validation.ipynb": The notebook provides step-by-step instructions to replicate the validation results of the original manuscript. The input can be modified to perform indipendent external validation and calcualate metrics on new data.
-- "Inference.ipynb": A ready-to-use notebook to perform inference and calculate risk scores for further analysis. 
+The **"Notebooks"** folder contains the following Jupyter notebooks:
+- **"Validation.ipynb"**: The notebook provides step-by-step instructions to replicate the validation results of the original manuscript. The input can be modified to perform indipendent external validation and calcualate metrics on new data.
+- **"Inference.ipynb"**: A ready-to-use notebook to perform inference and calculate risk scores for further analysis. 
 
 We suggest to use the provided conda environment to run the notebooks, this can be done selecting the "cdk46i-metastatic-bc-ml" enviroment from your IDE. We recommend using Visual Studio Code or PyCharm.
 
 ## Input preparation
 
 The data should have the following columns names and levels: 
-- "Age": numeric
+- **"Age"**: numeric
 - "
 
 Binary variables should be coded as 1/0. All other variables should be numeric. 
