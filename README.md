@@ -1,6 +1,6 @@
 # Predicting Progression-Free Survival in Hormone-Receptor Positive Metastatic Breast Cancer treated with CDK4/6 Inhibitors
 
-Repository for "**Predicting Progression-Free Survival in Hormone-Receptor Positive Metastatic Breast Cancer treated with CDK4/6 Inhibitors: A Machine Learning Approach.**". 
+Repository for "**Predicting Progression-Free Survival in Hormone-Receptor Positive Metastatic Breast Cancer treated with CDK4/6 Inhibitors: A Machine Learning Approach**". 
 
 THEBREAST-D-25-1335
 
@@ -9,8 +9,6 @@ Authors: *Pannunzio S, Mastrantoni L, xxx*
 Correspondence: *Mastrantoni Luca, [luca.mastrantoni01@icatt.it]*
 
 This repository provides a step-by-step tutorial for inference and indipendent validation of the models evaluated in the manuscript xxx-
-
-The web application is available at: xxx
 
 ## Getting Started
 
@@ -29,7 +27,7 @@ Using Anaconda Prompt:
 
 **a.** Go to the directory 
 ```bash
-cd cdk46i-metastatic-bc-ml-main\Inference
+cd cdk46i-metastatic-bc-ml-main\env
 ```
 
 **b.** Create conda enviroment (this may take few minutes)
@@ -39,14 +37,21 @@ conda env create -f env.yml
 
 **c.** Activate the enviroment
 ```bash
-conda activate cdk_inference
+conda activate cdk46i-metastatic-bc-ml
 ```
 
-### 3. Run the notebook
+### 3. Prepare your data
+The "Datasets" folder contains the following files:
+- "validation_dataset.xlsx": Excel file containing the data to replicate the validation step of the original manuscript. This SHOULD NOT be modified.
+- "Inference_dataset.xlsx": An Excel template containing 5 patients to be used for reference. Please prepare your dataset (or modify this file) according to this template. See "Input preparation" sections for further details.
+- "Inference_with_predictions.xlsx": An example on how the file should look after running the inference notebook.  
 
-Open the tutorial notebook Inference.ipynb. Select the "cdk_inference" enviroment.
-The notebook provides step-by-step instructions for using the models to perform inference on new data.
-We recommend using Visual Studio Code or PyCharm.
+### 4. Run the notebooks
+The "Notebooks" folder contains the following Jupyter notebooks:
+- "Validation.ipynb": The notebook provides step-by-step instructions to replicate the validation results of the original manuscript. The input can be modified to perform indipendent external validation and calcualate metrics on new data.
+- "Inference.ipynb": A ready-to-use notebook to perform inference and calculate risk scores for further analysis. 
+
+We suggest to use the provided conda environment to run the notebooks, this can be done selecting the "cdk46i-metastatic-bc-ml" enviroment from your IDE. We recommend using Visual Studio Code or PyCharm.
 
 #### Input preparation
 
@@ -55,38 +60,36 @@ The data should have columns names:
 xxx should be coded as. All other variables should be numeric. 
 Please refer to the example provided.
 
-#### Notebook details
+#### Notebook overview
+This part should serve as an overview of the basic steps of the inference pipeline. Please refer to the notebook "Inference.ipynb" to perform the analysis.
 
-**a.** Load the required packages for model inference and visualization 
+**a.** Import the required packages for inference and visualization 
 ```python
-import numpy as np
-import joblib
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
-xxx
+from sksurv.datasets import get_x_y
+import joblib
 ```
 
-**b.** Load your data (to import xlsx file use "pip install openpyxl")
+**b.** Load your data and split them into variables (X) and outcomes (y)
 ```python
-input_data = pd.read_excel('sample.xlsx')
+data = pd.read_excel(data_path)
+X, y = get_x_y(data, attr_labels, survival=True, pos_label=1)
 ```
 
-**c.** Load the models
+**c.** Load the model
 ```python
-model_cox = joblib.load("cox.sav")
-model_gbm = joblib.load("gbm.sav")
+model_gbm = joblib.load(model_path)
 ```
 
 **d.** Get predictions
 ```python
-# Handgrip
-prediction_handgrip = model_handgrip.predict(input_data, quantiles=quantiles)
-quantile_handgrip_df = pd.DataFrame(prediction_handgrip, columns=[f"{q:.3f}" for q in quantiles])
-
-handgrip_df = pd.concat([input_data, quantile_handgrip_df], axis=1)
-handgrip_df
+# Predict survival functions and risk scores
+surv_fns = model_gbm.predict_survival_function(X) # Predict survival function
+risk_scores = model_gbm.predict(X)  # Predict risk scores (Higher risk = worse PFS)
 ```
+**e.** Append predictions to the original dataframe.
 
 ## Contact
 For any questions, please refer to [luca.mastrantoni01@icatt.it].
