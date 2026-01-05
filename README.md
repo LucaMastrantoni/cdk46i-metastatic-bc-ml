@@ -35,10 +35,14 @@ cd cdk46i-metastatic-bc-ml\env
 conda env create -f env.yml
 ```
 
-**c.** Activate the enviroment
+**c.** Activate the enviroment 
 ```bash
 conda activate cdk46i-metastatic-bc-ml
 ```
+Check that everything is okay: (base) should change to (cdk46i-metastatic-bc-ml). Now close the Anaconda Prompt.
+
+**c.** Open the "Validation" notebook
+Set the directory in the main folder and open a notebook in your IDE. Choose the environment "cdk46i-metastatic-bc-ml" and run the code to reproduce the results of our validation cohort.
 
 ### 3. Prepare your data
 The **"Datasets"** folder contains the following files:
