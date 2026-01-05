@@ -15,7 +15,7 @@ This repository provides a step-by-step tutorial for inference and indipendent v
 Follow the instructions below to clone the repository and set up the environment.
 
 ### 1. Clone the repository or download it from GitHub
-Make sure you have [Git](https://git-scm.com/downloads) installed.
+Make sure you have [Git](https://git-scm.com/downloads) installed. Then, from command prompt, clone the repository:
 ```bash
 git clone https://github.com/LucaMastrantoni/cdk46i-metastatic-bc-ml.git
 ```
