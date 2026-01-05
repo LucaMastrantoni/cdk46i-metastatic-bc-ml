@@ -27,7 +27,7 @@ Using Anaconda Prompt:
 
 **a.** Go to the directory 
 ```bash
-cd cdk46i-metastatic-bc-ml-main\env
+cd cdk46i-metastatic-bc-ml\env
 ```
 
 **b.** Create conda enviroment (this may take few minutes)
