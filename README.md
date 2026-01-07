@@ -58,7 +58,7 @@ Binary variables should be coded as 1/0. All other variables should be numeric. 
 ##### Predictors
 - **"Age"**: Age at diagnosis. Numeric, we suggest evaluating patients from 30 to 85 years since outside these boundaries predictions may be unreliable.
 - **"Menopausal"**: Menopausal status. Binary, 1 is post-menopausal, otherwise 0.
-- **"Hormone_Resistance_Primary"** and **"Hormone_Resistance_Primary"**: Hormone resistance. Binary, 1 is resistant. They are mutually exclusive, hormone sensitivity is coded as both 0.
+- **"Hormone_Resistance_Primary"** and **"Hormone_Resistance_Secondary"**: Hormone resistance. Binary, 1 is resistant. They are mutually exclusive, hormone sensitivity is coded as both 0.
 - **"ER"**: Estrogen receptor status. Numeric, from 0 to 100.
 - **"PgR"**: Progesteron receptor status. Numeric, from 0 to 100.
 - **"HER2"**: HER2 Low/Zero status. Binary, 1 is HER2 Low.
