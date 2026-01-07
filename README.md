@@ -41,7 +41,7 @@ conda activate cdk46i-metastatic-bc-ml
 ```
 Check that everything is okay: (base) should change to (cdk46i-metastatic-bc-ml). Now close the Anaconda Prompt.
 
-**c.** Open the "Validation.ipynb" notebook
+**d.** Open the "Validation.ipynb" notebook
 Set the directory in the main folder and open the notebook in your IDE. Choose the environment "cdk46i-metastatic-bc-ml" and run the code to reproduce the results of our validation cohort.
 
 ## Using an external validation cohort
