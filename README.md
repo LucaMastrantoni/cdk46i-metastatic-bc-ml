@@ -61,9 +61,9 @@ Binary variables should be coded as 1/0. All other variables should be numeric. 
 - **"Hormone_Resistance_Primary"** and **"Hormone_Resistance_Secondary"**: Hormone resistance. Binary, 1 is resistant. They are mutually exclusive, hormone sensitivity is coded as both 0.
 - **"ER"**: Estrogen receptor status. Numeric, from 0 to 100.
 - **"PgR"**: Progesteron receptor status. Numeric, from 0 to 100.
-- **"HER2"**: HER2 Low/Zero status. Binary, 1 is HER2 Low.
+- **"HER2"**: HER2 Low/Zero status. Binary, 1 is HER2 Zero.
 - **"Ki67"**: Ki67status. Numeric, from 0 to 100.
-- **"Histotype"**: Ki67status. Binary, 1 is HER2 ductal, non-ductal histologies are 0.
+- **"Histotype"**: Ki67status. Binary, 1 is Non ductal, ductal histologies are 0.
 - **"M_Brain"**, **"M_Liver"**, **"M_Bone"**, **"M_Peritoneal"**: Presence of brain, liver, bone or peritoneal metastasis. Binary, 1 is presence of metastases. Multiple 1's are allowed.
 - **"Bone_Only"**: Bone-only disease. Binary, 1 is bone-only disease. If 1, M_Bone should be 1 too and M_Brain, M_Liver and M_Peritoneal should be 0.
 - **"Sinc"**: Synchronous tumor. Binary, 1 is synchronous.
