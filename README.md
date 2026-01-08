@@ -4,11 +4,9 @@ Repository for "**Predicting Progression-Free Survival in Hormone-Receptor Posit
 
 THEBREAST-D-25-1335
 
-Authors: *Pannunzio S, Mastrantoni L, xxx*
+Authors: *Sergio Pannunzio (1), Luca Mastrantoni (2), Noemi Maliziola (2), Letizia Pontolillo (2), Giovanna Garufi (2), Elena Di Monte (2), Alessandra Emiliani (1), Margherita Sgambato (2), Anna Cardillo (1), Antonella Palazzo (2), Armando Orlandi (2), Giampaolo Tortora (2), Emilio Bria (1,2).*
 
-Correspondence: *Mastrantoni Luca, [luca.mastrantoni01@icatt.it]*
-
-This repository provides a step-by-step tutorial for inference and indipendent validation of the models evaluated in the manuscript xxx-
+This repository provides a step-by-step tutorial for inference and indipendent validation of the models.
 
 ## Quick Start
 
@@ -112,5 +110,13 @@ risk_scores = model_gbm.predict(X)  # Predict risk scores (Higher risk = worse P
 ```
 **e.** Append predictions to the original dataframe.
 
+
 ## Contact
 For any questions, please refer to [luca.mastrantoni01@icatt.it].
+
+## Affiliations
+(1) Ospedale Isola Tiberina – Gemelli Isola, Roma, Italy; 
+
+(2) Comprehensive Cancer Center, Fondazione Policlinico Universitario Agostino Gemelli IRCCS, Università Cattolica del Sacro Cuore, Roma, Italy. 
+
+Correspondence: *Mastrantoni Luca, [luca.mastrantoni01@icatt.it]*
