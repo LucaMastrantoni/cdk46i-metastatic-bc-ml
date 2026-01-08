@@ -110,13 +110,13 @@ risk_scores = model_gbm.predict(X)  # Predict risk scores (Higher risk = worse P
 ```
 **e.** Append predictions to the original dataframe.
 
-
-## Contact
-For any questions, please refer to [luca.mastrantoni01@icatt.it].
-
 ## Affiliations
 (1) Ospedale Isola Tiberina – Gemelli Isola, Roma, Italy; 
-
 (2) Comprehensive Cancer Center, Fondazione Policlinico Universitario Agostino Gemelli IRCCS, Università Cattolica del Sacro Cuore, Roma, Italy. 
 
+![alt text](https://github.com/LucaMastrantoni")
+
+## Contact
 Correspondence: *Mastrantoni Luca, [luca.mastrantoni01@icatt.it]*
+
+
