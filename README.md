@@ -2,7 +2,7 @@
 
 Repository for "**Predicting Progression-Free Survival in Hormone-Receptor Positive Metastatic Breast Cancer treated with CDK4/6 Inhibitors: A Machine Learning Approach**". 
 
-*In press on: The Breast*
+*In press: The Breast, https://doi.org/10.1016/j.breast.2026.104715*
 
 Authors: *Sergio Pannunzio (1), Luca Mastrantoni (2), Noemi Maliziola (2), Letizia Pontolillo (2), Giovanna Garufi (2), Elena Di Monte (2), Alessandra Emiliani (1), Margherita Sgambato (2), Anna Cardillo (1), Antonella Palazzo (2), Armando Orlandi (2), Giampaolo Tortora (2), Emilio Bria (1,2).*
 
