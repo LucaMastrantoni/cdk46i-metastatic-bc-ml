@@ -16,7 +16,7 @@ gbm_model = joblib.load('Models/gbm_model.joblib')
 
 # Title
 st.header("""Predicting Progression-Free Survival in Hormone-Receptor Positive Metastatic Breast Cancer treated with CDK4/6 Inhibitors""")
-st.markdown("""Graphical interface for "Predicting Progression-Free Survival in Hormone-Receptor Positive Metastatic Breast Cancer treated with CDK4/6 Inhibitors: A Machine Learning Approach". Pannunzio, S. et al. *The Breast*, Volume 86, 104715. https://doi.org/10.1016/j.breast.2026.104715 """)
+st.markdown("""Graphical interface for "Predicting Progression-Free Survival in Hormone-Receptor Positive (HR+/HER2–) Metastatic Breast Cancer (MBC) treated with CDK4/6 Inhibitors: A Machine Learning Approach." Pannunzio S, Mastrantoni L, Maliziola N, et al. The Breast 2026:104715. https://doi.org/10.1016/j.breast.2026.104715. """)
 
 # User inputs
 st.divider()
@@ -104,6 +104,7 @@ st.subheader(f"Acknowledgements")
 st.markdown("""This study was conducted at Comprehensive Cancer Center, Fondazione Policlinico Universitario Agostino Gemelli IRCCS (Rome, Italy) and Ospedale Isola Tiberina - Gemelli Isola, (Rome, Italy).""")         
 st.image("App/logo.PNG")
 st.markdown("""Web add developed by Luca Mastrantoni. Source code available at https://github.com/LucaMastrantoni/cdk46i-metastatic-bc-ml.git""")
+
 
 
 
