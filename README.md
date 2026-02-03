@@ -1,8 +1,8 @@
 # Predicting Progression-Free Survival in Hormone-Receptor Positive Metastatic Breast Cancer treated with CDK4/6 Inhibitors
 
-Repository for "**Predicting Progression-Free Survival in Hormone-Receptor Positive Metastatic Breast Cancer treated with CDK4/6 Inhibitors: A Machine Learning Approach**". *Pannunzio, S. et al. The Breast, Volume 86, 104715. https://doi.org/10.1016/j.breast.2026.104715*
+Repository for Pannunzio S, Mastrantoni L, Maliziola N, et al. *Predicting Progression-Free Survival in Hormone-Receptor Positive (HR+/HER2–) Metastatic Breast Cancer (MBC) treated with CDK4/6 Inhibitors: A Machine Learning Approach.* The Breast 2026:104715. https://doi.org/10.1016/j.breast.2026.104715.
 
-*Sergio Pannunzio (1), Luca Mastrantoni (2), Noemi Maliziola (2), Letizia Pontolillo (2), Giovanna Garufi (2), Elena Di Monte (2), Alessandra Emiliani (1), Margherita Sgambato (2), Anna Cardillo (1), Antonella Palazzo (2), Armando Orlandi (2), Giampaolo Tortora (2), Emilio Bria (1,2).*
+
 
 This repository provides a step-by-step tutorial for inference and indipendent validation of the models.
 
@@ -113,9 +113,21 @@ risk_scores = model_gbm.predict(X)  # Predict risk scores (Higher risk = worse P
 ```
 **e.** Append predictions to the original dataframe.
 
-## Affiliations
-(1) Ospedale Isola Tiberina – Gemelli Isola, Roma, Italy; 
+## Connected papers
+If you found this work interesting, you may also like:
 
+- Mastrantoni L, Garufi G, Giordano G, Maliziola N, Di Monte E, Arcuri G, et al. *Accessible model predicts response in hormone receptor positive HER2 negative breast cancer receiving neoadjuvant chemotherapy.* NPJ Breast Cancer 2025;11:11. https://doi.org/10.1038/s41523-025-00727-w.
+- Mastrantoni L, Garufi G, Giordano G, Maliziola N, Di Monte E, Arcuri G, et al. *Comparison of machine learning and deep learning models for survival prediction in early-stage hormone receptor-positive/HER2-negative breast cancer receiving neoadjuvant chemotherapy.* ESMO Real World Data and Digital Oncology 2025;10:100184. https://doi.org/10.1016/j.esmorw.2025.100184.
+- Mastrantoni L, Orlandi A, Palazzo A, Garufi G, Fabi A, Daniele G, et al. *The likelihood of being helped or harmed as a patient-centred tool to assess cyclin dependent kinase 4/6 inhibitors clinical impact and safety in metastatic breast cancer: a systematic review and sensitivity-analysis.* EClinicalMedicine 2023;56:101824. https://doi.org/10.1016/j.eclinm.2023.101824.
+- Garufi G, Mastrantoni L, Maliziola N, Monte E Di, Arcuri G, Frescura V, et al. *Activity and Efficacy of Neoadjuvant Chemotherapy in Luminal-HER2 Negative Early Breast Cancer according to HER2 Score (Low vs Score 0): A Retrospective Study.* Clin Breast Cancer 2025. https://doi.org/10.1016/j.clbc.2025.02.016.
+- Mastrantoni L, Garufi G, Di Monte E, Maliziola N, Pasqualoni M, Pontolillo L, et al. *Adjuvant denosumab in early breast cancer: a systematic review and meta-analysis of randomized controlled clinical trials.* Ther Adv Med Oncol 2023;15. https://doi.org/10.1177/17588359231173180.
+- Giordano G, Mastrantoni L, Landi F. *Development and Validation of Quantile Regression Forests for Prediction of Reference Quantiles in Handgrip and Chair‐Stand Test.* J Cachexia Sarcopenia Muscle 2025;16. https://doi.org/10.1002/jcsm.13868.
+
+## Affiliations
+
+*Sergio Pannunzio (1), Luca Mastrantoni (2), Noemi Maliziola (2), Letizia Pontolillo (2), Giovanna Garufi (2), Elena Di Monte (2), Alessandra Emiliani (1), Margherita Sgambato (2), Anna Cardillo (1), Antonella Palazzo (2), Armando Orlandi (2), Giampaolo Tortora (2), Emilio Bria (1,2).*
+
+(1) Ospedale Isola Tiberina – Gemelli Isola, Roma, Italy; 
 (2) Comprehensive Cancer Center, Fondazione Policlinico Universitario Agostino Gemelli IRCCS, Università Cattolica del Sacro Cuore, Roma, Italy. 
 
 ![alt text](https://github.com/LucaMastrantoni/cdk46i-metastatic-bc-ml/blob/main/App/logo.PNG)
